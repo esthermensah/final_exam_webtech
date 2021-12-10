@@ -1,0 +1,39 @@
+.high{
+    background-color: rgba(207, 111, 111, 0.774);
+}
+
+.barsbars{
+    margin-left: 30px;
+    color: black;
+    
+
+}
+.bars{
+    margin-left: 350px;
+    font-size: larger;
+    color: black;
+}
+
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+    color: black;
+}
+.ins{
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.navbarcolor{
+background-color: rgba(189, 16, 51, 0.801);
+}
+
+
+
+
+
+
+
+
+
+
+
