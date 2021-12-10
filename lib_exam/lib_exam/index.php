@@ -1,3 +1,11 @@
+
+<!-- Esther Dzifa Mensah 
+Final Exam 
+Web Technology
+2022 -->
+
+
+
 <?php
     //session_start();
 
@@ -18,7 +26,7 @@
             $Email = $_POST["email"];
             $Password=$_POST["password"];
             // need a table for this in data base 
-            $stmt = $conn -> prepare("SELECT * from `person` where `email`=? and `password`=?");
+            $stmt = $conn -> prepare("SELECT * FROM `person` WHERE `email`=? AND `pasword`=?");
             $stmt -> bind_param("ss",$Email,$Password);
             $user = null;
 
@@ -27,7 +35,7 @@
             $result = $stmt->get_result();
 
             //there will be two options for this coz i have admiin and student interface
-            if($result -> fetch_all(MYSQLI_ASSOC)) {
+            if($result -> fetch_assoc()) {
                 header( 'Location: ./php/admin.php');
 
             }
@@ -54,17 +62,19 @@
     </head>
 
     <body login-body>
-        <div class="login">
+      
+        <div class="login border">
             <h1>Admin Login</h1>
-            <form method="post" name="form" id="form" action="index.php">
+            <form method="post" name="form" id="form" action="">
                 <input type="text" name="email" placeholder="Your Email *" required="required"/>
                 <input type="password" name="password" placeholder="Password" required="required" />
                 <button name="submit" type="submit" class="btn btn-primary btn-block btn-large">Login</button>
             </form>
-        </div>   
+        </div>  
+    
 
         <?php if ($error){ ?>
-            <p style="color:red;margin:500px;margin-left:570px; " ><?php echo $error ?> </p> 
+            <p style="color:red;width:250px;margin: 10px auto;" ><?php echo $error ?> </p> 
 
         <?php }?>   
 
