@@ -40,7 +40,7 @@ Web Technology
 
             }
             else {
-                $error = " Please Check your credentials and Try again!!";
+                $error = " Wrong credentials: User does not exist. Try again";
             }
 
 
@@ -74,7 +74,7 @@ Web Technology
     
 
         <?php if ($error){ ?>
-            <p style="color:red;width:250px;margin: 10px auto;" ><?php echo $error ?> </p> 
+            <p style="color:white;width:250px;margin: 10px auto;" ><?php echo $error ?> </p> 
 
         <?php }?>   
 

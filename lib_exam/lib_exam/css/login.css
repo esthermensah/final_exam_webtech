@@ -59,6 +59,19 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 
 .border{
-   background: rgba(187, 165, 165, 0.774);
+   background: rgba(88, 54, 54, 0.774);
    padding: 25px;
+   
+}
+
+body{
+   background-image: url("../images/book6.jpg");
+   height: 500px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   font-family: 'Garamond';
+   font-size: larger;
+
 }

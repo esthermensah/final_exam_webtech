@@ -30,7 +30,7 @@ require __DIR__ ."/database_connection_test.php";
                     
                         <a href="fines.php"><Button class="all_buttons" > Track Books</Button>
                         
-                        <a href="../index.php"><Button class="all_buttons" > Logout</Button></a>
+                        <a href="logout.php"><Button class="all_buttons" > Logout</Button></a>
                     </div>
 
                         
